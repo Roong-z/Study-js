@@ -5,18 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <div id="title">안녕하세요</div>
     <button id="change">변경</button>
-    <script>
-      document.getElementById("change").addEventListener("click", () => {
-        제목변경("변경성공쓰"), 색상변경("red"), 폰트사이즈변경("100px");
-      });
-      let 제목변경 = (a) => (document.getElementById("title").innerHTML = a);
-      let 색상변경 = (a) => (document.getElementById("title").style.color = a);
-      let 폰트사이즈변경 = (a) =>
-        (document.getElementById("title").style.fontSize = a);
-    </script>
+    <p id="person"></p>
   </body>
 </html>
