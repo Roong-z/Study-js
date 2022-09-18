@@ -33,3 +33,9 @@ const array = [1, 2, 3, 4, 5, 6, 6, 7, 8, 8, 9, 10];
 for (value of array) {
   console.log(value);
 }
+
+// object cloning (Object.assign)
+// const person2 = {};
+// Object.assign(person2, person1);
+const person2 = Object.assign({}, person1);
+console.log(person2);
